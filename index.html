@@ -1,1 +1,270 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Business Link Consultancies — Services</title>
+  <style>
+    :root{
+      --bg:#f5f7fb;
+      --card:#ffffff;
+      --text:#0f172a;
+      --muted:#64748b;
+      --brand:#0ea5e9;
+      --brand2:#1e3a8a;
+      --ring: rgba(14,165,233,.18);
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      background: radial-gradient(900px 500px at 20% -10%, rgba(14,165,233,.18), transparent 60%),
+                  radial-gradient(900px 500px at 90% 0%, rgba(30,58,138,.16), transparent 55%),
+                  var(--bg);
+      color:var(--text);
+    }
+    .wrap{max-width:860px; margin:0 auto; padding:22px 14px 40px;}
+    .top{
+      display:flex; gap:14px; align-items:center;
+      background:rgba(255,255,255,.7);
+      border:1px solid rgba(15,23,42,.06);
+      border-radius:18px;
+      padding:14px;
+      backdrop-filter: blur(8px);
+    }
+    .logo{
+      width:56px; height:56px; border-radius:16px;
+      background:#fff;
+      border:1px solid rgba(15,23,42,.06);
+      display:flex; align-items:center; justify-content:center;
+      overflow:hidden;
+      box-shadow: 0 10px 24px rgba(2,6,23,.06);
+      flex:0 0 auto;
+    }
+    .logo img{width:100%; height:100%; object-fit:cover;}
+    h1{font-size:18px; margin:0 0 2px;}
+    .sub{margin:0; color:var(--muted); font-size:13px; line-height:1.35;}
+    .pillrow{display:flex; flex-wrap:wrap; gap:8px; margin-top:10px;}
+    .pill{
+      font-size:12px; color:#0b1220;
+      background: rgba(14,165,233,.10);
+      border:1px solid rgba(14,165,233,.20);
+      padding:6px 10px; border-radius:999px;
+    }
+    .grid{
+      margin-top:14px;
+      display:grid;
+      grid-template-columns: repeat(2, minmax(0,1fr));
+      gap:12px;
+    }
+    @media (min-width: 860px){
+      .grid{grid-template-columns: repeat(3, minmax(0,1fr));}
+    }
+    .section{
+      margin-top:16px;
+      color:var(--muted);
+      font-size:12px;
+      letter-spacing:.06em;
+      text-transform:uppercase;
+    }
+    a.card{
+      text-decoration:none;
+      background: var(--card);
+      border:1px solid rgba(15,23,42,.08);
+      border-radius:18px;
+      padding:14px;
+      display:flex;
+      gap:12px;
+      align-items:flex-start;
+      box-shadow: 0 12px 28px rgba(2,6,23,.06);
+      transition: transform .12s ease, box-shadow .12s ease, border-color .12s ease;
+      min-height:92px;
+    }
+    a.card:hover{
+      transform: translateY(-2px);
+      border-color: rgba(14,165,233,.35);
+      box-shadow: 0 18px 40px rgba(2,6,23,.10);
+    }
+    .ico{
+      width:44px; height:44px; border-radius:14px;
+      display:flex; align-items:center; justify-content:center;
+      background: linear-gradient(135deg, rgba(14,165,233,.18), rgba(30,58,138,.14));
+      border:1px solid rgba(14,165,233,.18);
+      box-shadow: 0 0 0 6px var(--ring);
+      flex: 0 0 auto;
+    }
+    .title{margin:0; font-size:14px; font-weight:800; line-height:1.2;}
+    .desc{margin:6px 0 0; color:var(--muted); font-size:12px; line-height:1.35;}
+    .footer{
+      margin-top:16px;
+      font-size:12px;
+      color:var(--muted);
+      text-align:center;
+    }
+    .footer b{color:var(--text)}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="top">
+      <div class="logo">
+        <!-- Upload your logo file to: assets/logo.png -->
+        <img src="assets/logo.png" alt="Business Link logo">
+      </div>
+      <div>
+        <h1>Business Link Consultancies</h1>
+        <p class="sub">Tap a service → WhatsApp opens instantly with the service name. Your team knows exactly what the client wants.</p>
+        <div class="pillrow">
+          <div class="pill">Mainland • Free Zone • Offshore</div>
+          <div class="pill">PRO • Visas • Tax</div>
+          <div class="pill">Web • IT</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">Business Setup & Licensing</div>
+    <div class="grid">
+      <a class="card" href="" data-service="New Business Setup (Mainland / Free Zone / Offshore)">
+        <div class="ico">🏢</div>
+        <div>
+          <p class="title">New Business Setup</p>
+          <p class="desc">Mainland / Free Zone / Offshore</p>
+        </div>
+      </a>
+
+      <a class="card" href="" data-service="Trade License Issuance & Renewal">
+        <div class="ico">📄</div>
+        <div>
+          <p class="title">Trade License</p>
+          <p class="desc">Issuance & Renewal</p>
+        </div>
+      </a>
+
+      <a class="card" href="" data-service="Business Amendments (Partner / Activity / Name Changes)">
+        <div class="ico">🧾</div>
+        <div>
+          <p class="title">Business Amendments</p>
+          <p class="desc">Partner / Activity / Name changes</p>
+        </div>
+      </a>
+
+      <a class="card" href="" data-service="Local Sponsor / Corporate Nominee Services">
+        <div class="ico">🤝</div>
+        <div>
+          <p class="title">Local Sponsor</p>
+          <p class="desc">Corporate nominee services</p>
+        </div>
+      </a>
+
+      <a class="card" href="" data-service="Bank Account Assistance">
+        <div class="ico">🏦</div>
+        <div>
+          <p class="title">Bank Account</p>
+          <p class="desc">Assistance & support</p>
+        </div>
+      </a>
+
+      <a class="card" href="" data-service="Office Ejari & Business Address Solutions">
+        <div class="ico">📍</div>
+        <div>
+          <p class="title">Ejari & Address</p>
+          <p class="desc">Office Ejari & address solutions</p>
+        </div>
+      </a>
+    </div>
+
+    <div class="section">PRO, Visas & Government Approvals</div>
+    <div class="grid">
+      <a class="card" href="" data-service="Complete PRO Services & Visa Processing">
+        <div class="ico">🛂</div>
+        <div>
+          <p class="title">PRO & Visa Processing</p>
+          <p class="desc">End-to-end PRO services</p>
+        </div>
+      </a>
+
+      <a class="card" href="" data-service="Immigration & Labor Department Services">
+        <div class="ico">🧑‍💼</div>
+        <div>
+          <p class="title">Immigration & Labor</p>
+          <p class="desc">All department services</p>
+        </div>
+      </a>
+
+      <a class="card" href="" data-service="Municipality, RTA & Other Government Approvals">
+        <div class="ico">✅</div>
+        <div>
+          <p class="title">Govt Approvals</p>
+          <p class="desc">Municipality • RTA • more</p>
+        </div>
+      </a>
+
+      <a class="card" href="" data-service="Golden Visa & Investor Visa Services">
+        <div class="ico">⭐</div>
+        <div>
+          <p class="title">Golden / Investor Visa</p>
+          <p class="desc">Eligibility & processing</p>
+        </div>
+      </a>
+    </div>
+
+    <div class="section">Tax, Accounting & Tech</div>
+    <div class="grid">
+      <a class="card" href="" data-service="VAT Registration, Filing & Corporate Tax Services">
+        <div class="ico">💼</div>
+        <div>
+          <p class="title">VAT & Corporate Tax</p>
+          <p class="desc">Registration • filing • support</p>
+        </div>
+      </a>
+
+      <a class="card" href="" data-service="Accounting & Bookkeeping Support">
+        <div class="ico">📊</div>
+        <div>
+          <p class="title">Accounting</p>
+          <p class="desc">Bookkeeping & reporting</p>
+        </div>
+      </a>
+
+      <a class="card" href="" data-service="Web Page Design">
+        <div class="ico">🌐</div>
+        <div>
+          <p class="title">Web Page Design</p>
+          <p class="desc">Modern, fast websites</p>
+        </div>
+      </a>
+
+      <a class="card" href="" data-service="All IT Services">
+        <div class="ico">🖥️</div>
+        <div>
+          <p class="title">All IT Services</p>
+          <p class="desc">Support • setup • systems</p>
+        </div>
+      </a>
+    </div>
+
+    <div class="footer">
+      <b>Business Link Consultancies</b> • Scan → select service → WhatsApp opens instantly
+    </div>
+  </div>
+
+  <script>
+    // ✅ Replace this with your WhatsApp number (no +, no spaces)
+    const WHATSAPP_NUMBER = "971521026575";
+
+    // Message template (your team will instantly know the exact service)
+    function buildMessage(service){
+      return `Hi, I scanned your business card QR. I need: ${service}. (Source: Business Card QR)`;
+    }
+
+    // Wire each card to WhatsApp deep link
+    document.querySelectorAll("a.card").forEach(a=>{
+      const service = a.getAttribute("data-service") || "Service Inquiry";
+      const msg = encodeURIComponent(buildMessage(service));
+      a.href = `https://wa.me/${WHATSAPP_NUMBER}?text=${msg}`;
+      a.target = "_blank";
+      a.rel = "noopener";
+    });
+  </script>
+</body>
+</html>
 
