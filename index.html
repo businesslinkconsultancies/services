@@ -4,6 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Business Link Consultancies — Services</title>
+
   <style>
     :root{
       --bg:#f5f7fb;
@@ -16,10 +17,12 @@
     }
     *{box-sizing:border-box}
     body{
-      margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-      background: radial-gradient(900px 500px at 20% -10%, rgba(14,165,233,.18), transparent 60%),
-                  radial-gradient(900px 500px at 90% 0%, rgba(30,58,138,.16), transparent 55%),
-                  var(--bg);
+      margin:0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      background:
+        radial-gradient(900px 500px at 20% -10%, rgba(14,165,233,.18), transparent 60%),
+        radial-gradient(900px 500px at 90% 0%, rgba(30,58,138,.16), transparent 55%),
+        var(--bg);
       color:var(--text);
     }
     .wrap{max-width:860px; margin:0 auto; padding:22px 14px 40px;}
@@ -91,6 +94,7 @@
       border:1px solid rgba(14,165,233,.18);
       box-shadow: 0 0 0 6px var(--ring);
       flex: 0 0 auto;
+      font-size:18px;
     }
     .title{margin:0; font-size:14px; font-weight:800; line-height:1.2;}
     .desc{margin:6px 0 0; color:var(--muted); font-size:12px; line-height:1.35;}
@@ -103,27 +107,29 @@
     .footer b{color:var(--text)}
   </style>
 </head>
+
 <body>
   <div class="wrap">
     <div class="top">
       <div class="logo">
-        <!-- Upload your logo file to: asset/WhatsApp Image 2026-01-12 at 09.42.48.jpeg -->
-        <img src="asset/WhatsApp Image 2026-01-12 at 09.42.48.jpeg" alt="Business Link logo">
+        <!-- Your logo file path (spaces encoded as %20 for safety) -->
+        <img src="assets/WhatsApp%20Image%202026-01-12%20at%2009.42.48.jpeg" alt="Business Link logo">
       </div>
       <div>
         <h1>Business Link Consultancies</h1>
-        <p class="sub">Tap a service → WhatsApp opens instantly with the service name. Your team knows exactly what the client wants.</p>
+        <p class="sub">Select a service → WhatsApp opens instantly with the service name. We’ll assist you right away.</p>
         <div class="pillrow">
           <div class="pill">Mainland • Free Zone • Offshore</div>
-          <div class="pill">PRO • Visas • Tax</div>
-          <div class="pill">Web • IT</div>
+          <div class="pill">PRO • Visas • Approvals</div>
+          <div class="pill">Tax • Accounting • Tech</div>
         </div>
       </div>
     </div>
 
+    <!-- 1) Business Setup & Licensing -->
     <div class="section">Business Setup & Licensing</div>
     <div class="grid">
-      <a class="card" href="" data-service="New Business Setup (Mainland / Free Zone / Offshore)">
+      <a class="card" href="#" data-service="New Business Setup (Mainland / Free Zone / Offshore)">
         <div class="ico">🏢</div>
         <div>
           <p class="title">New Business Setup</p>
@@ -131,7 +137,7 @@
         </div>
       </a>
 
-      <a class="card" href="" data-service="Trade License Issuance & Renewal">
+      <a class="card" href="#" data-service="Trade License Issuance & Renewal">
         <div class="ico">📄</div>
         <div>
           <p class="title">Trade License</p>
@@ -139,7 +145,7 @@
         </div>
       </a>
 
-      <a class="card" href="" data-service="Business Amendments (Partner / Activity / Name Changes)">
+      <a class="card" href="#" data-service="Business Amendments (Partner / Activity / Name Changes)">
         <div class="ico">🧾</div>
         <div>
           <p class="title">Business Amendments</p>
@@ -147,7 +153,7 @@
         </div>
       </a>
 
-      <a class="card" href="" data-service="Local Sponsor / Corporate Nominee Services">
+      <a class="card" href="#" data-service="Local Sponsor / Corporate Nominee Services">
         <div class="ico">🤝</div>
         <div>
           <p class="title">Local Sponsor</p>
@@ -155,7 +161,7 @@
         </div>
       </a>
 
-      <a class="card" href="" data-service="Bank Account Assistance">
+      <a class="card" href="#" data-service="Bank Account Assistance">
         <div class="ico">🏦</div>
         <div>
           <p class="title">Bank Account</p>
@@ -163,7 +169,7 @@
         </div>
       </a>
 
-      <a class="card" href="" data-service="Office Ejari & Business Address Solutions">
+      <a class="card" href="#" data-service="Office Ejari & Business Address Solutions">
         <div class="ico">📍</div>
         <div>
           <p class="title">Ejari & Address</p>
@@ -172,17 +178,46 @@
       </a>
     </div>
 
-    <div class="section">PRO, Visas & Government Approvals</div>
+    <!-- 2) Web & IT Services (SECOND LINE as you requested) -->
+    <div class="section">Web & IT Services</div>
     <div class="grid">
-      <a class="card" href="" data-service="Complete PRO Services & Visa Processing">
-        <div class="ico">🛂</div>
+      <a class="card" href="#" data-service="Web Page Design">
+        <div class="ico">🌐</div>
         <div>
-          <p class="title">PRO & Visa Processing</p>
-          <p class="desc">End-to-end PRO services</p>
+          <p class="title">Web Page Design</p>
+          <p class="desc">Modern, fast business websites</p>
         </div>
       </a>
 
-      <a class="card" href="" data-service="Immigration & Labor Department Services">
+      <a class="card" href="#" data-service="All IT Services">
+        <div class="ico">🖥️</div>
+        <div>
+          <p class="title">All IT Services</p>
+          <p class="desc">IT support, systems & setup</p>
+        </div>
+      </a>
+    </div>
+
+    <!-- 3) PRO, Visas & Government Approvals -->
+    <div class="section">PRO, Visas & Government Approvals</div>
+    <div class="grid">
+      <a class="card" href="#" data-service="Complete PRO Services & Visa Processing">
+        <div class="ico">🛂</div>
+        <div>
+          <p class="title">PRO & Visa Processing</p>
+          <p class="desc">Complete PRO services</p>
+        </div>
+      </a>
+
+      <a class="card" href="#" data-service="Golden Visa & Investor Visa Services">
+        <div class="ico">⭐</div>
+        <div>
+          <p class="title">Golden / Investor Visa</p>
+          <p class="desc">Eligibility & processing</p>
+        </div>
+      </a>
+
+      <a class="card" href="#" data-service="Immigration & Labor Department Services">
         <div class="ico">🧑‍💼</div>
         <div>
           <p class="title">Immigration & Labor</p>
@@ -190,54 +225,31 @@
         </div>
       </a>
 
-      <a class="card" href="" data-service="Municipality, RTA & Other Government Approvals">
+      <a class="card" href="#" data-service="Municipality, RTA & Other Government Approvals">
         <div class="ico">✅</div>
         <div>
           <p class="title">Govt Approvals</p>
           <p class="desc">Municipality • RTA • more</p>
         </div>
       </a>
-
-      <a class="card" href="" data-service="Golden Visa & Investor Visa Services">
-        <div class="ico">⭐</div>
-        <div>
-          <p class="title">Golden / Investor Visa</p>
-          <p class="desc">Eligibility & processing</p>
-        </div>
-      </a>
     </div>
 
-    <div class="section">Tax, Accounting & Tech</div>
+    <!-- 4) Tax & Accounting (LAST SECTION — no PRO/Visa here) -->
+    <div class="section">Tax & Accounting</div>
     <div class="grid">
-      <a class="card" href="" data-service="VAT Registration, Filing & Corporate Tax Services">
+      <a class="card" href="#" data-service="VAT Registration, Filing & Corporate Tax Services">
         <div class="ico">💼</div>
         <div>
           <p class="title">VAT & Corporate Tax</p>
-          <p class="desc">Registration • filing • support</p>
+          <p class="desc">Registration • filing • compliance</p>
         </div>
       </a>
 
-      <a class="card" href="" data-service="Accounting & Bookkeeping Support">
+      <a class="card" href="#" data-service="Accounting & Bookkeeping Support">
         <div class="ico">📊</div>
         <div>
-          <p class="title">Accounting</p>
+          <p class="title">Accounting & Bookkeeping</p>
           <p class="desc">Bookkeeping & reporting</p>
-        </div>
-      </a>
-
-      <a class="card" href="" data-service="Web Page Design">
-        <div class="ico">🌐</div>
-        <div>
-          <p class="title">Web Page Design</p>
-          <p class="desc">Modern, fast websites</p>
-        </div>
-      </a>
-
-      <a class="card" href="" data-service="All IT Services">
-        <div class="ico">🖥️</div>
-        <div>
-          <p class="title">All IT Services</p>
-          <p class="desc">Support • setup • systems</p>
         </div>
       </a>
     </div>
@@ -248,23 +260,16 @@
   </div>
 
   <script>
-    // ✅ Replace this with your WhatsApp number (no +, no spaces)
-    const WHATSAPP_NUMBER = "971521026575";
+    // ✅ Put your WhatsApp number here (digits only, no +, no spaces)
+    // Example: +971 58 641 2053  ->  971586412053
+    const WHATSAPP_NUMBER = "971502994976";
 
-    // Message template (your team will instantly know the exact service)
+    // Best converting message (short, clear, asks for next step)
     function buildMessage(service){
-      return `Hi, I scanned your business card QR. I need: ${service}. (Source: Business Card QR)`;
+      return `Hi, I need ${service}. Please assist me and share the requirements & cost.`;
     }
 
-    // Wire each card to WhatsApp deep link
+    // Wire each service card to WhatsApp deep link
     document.querySelectorAll("a.card").forEach(a=>{
       const service = a.getAttribute("data-service") || "Service Inquiry";
       const msg = encodeURIComponent(buildMessage(service));
-      a.href = `https://wa.me/${WHATSAPP_NUMBER}?text=${msg}`;
-      a.target = "_blank";
-      a.rel = "noopener";
-    });
-  </script>
-</body>
-</html>
-
